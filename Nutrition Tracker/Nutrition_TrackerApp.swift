@@ -9,9 +9,21 @@ import SwiftUI
 
 @main
 struct Nutrition_TrackerApp: App {
+    @StateObject private var foodLogStore = FoodLogStore()
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            TabView {
+                ContentView()
+                    .tabItem {
+                        Label("Scan", systemImage: "barcode.viewfinder")
+                    }
+                FoodLogView()
+                    .tabItem {
+                        Label("Log", systemImage: "list.bullet")
+                    }
+            }
+            .environmentObject(foodLogStore)
         }
     }
 }

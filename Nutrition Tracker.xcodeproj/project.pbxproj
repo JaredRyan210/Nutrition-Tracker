@@ -14,6 +14,10 @@
 		56D3D2A32C49DAA6006895C5 /* Nutrition_TrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56D3D2A22C49DAA6006895C5 /* Nutrition_TrackerTests.swift */; };
 		56D3D2AD2C49DAA6006895C5 /* Nutrition_TrackerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56D3D2AC2C49DAA6006895C5 /* Nutrition_TrackerUITests.swift */; };
 		56D3D2AF2C49DAA6006895C5 /* Nutrition_TrackerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56D3D2AE2C49DAA6006895C5 /* Nutrition_TrackerUITestsLaunchTests.swift */; };
+		56D3D2BE2C49DDED006895C5 /* BarcodeScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56D3D2BD2C49DDED006895C5 /* BarcodeScannerView.swift */; };
+		56D3D2C02C49E41F006895C5 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56D3D2BF2C49E41F006895C5 /* NetworkManager.swift */; };
+		56D3D2C22C49E95B006895C5 /* FoodLogStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56D3D2C12C49E95B006895C5 /* FoodLogStore.swift */; };
+		56D3D2C42C49EC90006895C5 /* FoodLogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56D3D2C32C49EC90006895C5 /* FoodLogView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +48,10 @@
 		56D3D2A82C49DAA6006895C5 /* Nutrition TrackerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Nutrition TrackerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		56D3D2AC2C49DAA6006895C5 /* Nutrition_TrackerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nutrition_TrackerUITests.swift; sourceTree = "<group>"; };
 		56D3D2AE2C49DAA6006895C5 /* Nutrition_TrackerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nutrition_TrackerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		56D3D2BD2C49DDED006895C5 /* BarcodeScannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarcodeScannerView.swift; sourceTree = "<group>"; };
+		56D3D2BF2C49E41F006895C5 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		56D3D2C12C49E95B006895C5 /* FoodLogStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodLogStore.swift; sourceTree = "<group>"; };
+		56D3D2C32C49EC90006895C5 /* FoodLogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodLogView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +106,10 @@
 				56D3D2932C49DAA5006895C5 /* ContentView.swift */,
 				56D3D2952C49DAA6006895C5 /* Assets.xcassets */,
 				56D3D2972C49DAA6006895C5 /* Preview Content */,
+				56D3D2BD2C49DDED006895C5 /* BarcodeScannerView.swift */,
+				56D3D2BF2C49E41F006895C5 /* NetworkManager.swift */,
+				56D3D2C12C49E95B006895C5 /* FoodLogStore.swift */,
+				56D3D2C32C49EC90006895C5 /* FoodLogView.swift */,
 			);
 			path = "Nutrition Tracker";
 			sourceTree = "<group>";
@@ -257,6 +269,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				56D3D2C22C49E95B006895C5 /* FoodLogStore.swift in Sources */,
+				56D3D2C42C49EC90006895C5 /* FoodLogView.swift in Sources */,
+				56D3D2C02C49E41F006895C5 /* NetworkManager.swift in Sources */,
+				56D3D2BE2C49DDED006895C5 /* BarcodeScannerView.swift in Sources */,
 				56D3D2942C49DAA5006895C5 /* ContentView.swift in Sources */,
 				56D3D2922C49DAA5006895C5 /* Nutrition_TrackerApp.swift in Sources */,
 			);
@@ -422,8 +438,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Nutrition Tracker/Preview Content\"";
+				DEVELOPMENT_TEAM = 3T75HB562U;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_NSCameraUsageDescription = "used to scan barcodes";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -450,8 +469,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Nutrition Tracker/Preview Content\"";
+				DEVELOPMENT_TEAM = 3T75HB562U;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_NSCameraUsageDescription = "used to scan barcodes";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -477,6 +499,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3T75HB562U;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
 				MARKETING_VERSION = 1.0;
@@ -496,6 +519,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3T75HB562U;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
 				MARKETING_VERSION = 1.0;
@@ -512,8 +536,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3T75HB562U;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "iii.Nutrition-TrackerUITests";
@@ -529,8 +555,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3T75HB562U;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "iii.Nutrition-TrackerUITests";
